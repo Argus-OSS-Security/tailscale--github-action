@@ -1,12 +1,13 @@
 name: "Lint Checks"
 
-on:
-  pull_request:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+# 
 jobs:
   # Basic linter check
   lint-check:

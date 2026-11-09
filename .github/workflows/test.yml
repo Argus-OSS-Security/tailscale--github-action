@@ -3,13 +3,14 @@ name: "Integration Tests"
 permissions:
   id-token: write # This is required for requesting the JWT for workload identity
 
-on:
-  pull_request:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+# 
 jobs:
   # Matrix test for all supported platforms and architectures
 

@@ -1,12 +1,13 @@
 name: "Smoke Tests"
 
-on:
-  pull_request:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+# 
 jobs:
   # Basic smoke test that doesn't require secrets
   smoke-test:
